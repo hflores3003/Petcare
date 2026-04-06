@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Plateforme Animaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="overlay"></div>
+            <div class="left-content">
+                <h1>Bon retour 🐶🐱</h1>
+                <p>
+                    Connectez-vous pour accéder à votre espace personnel,
+                    gérer vos annonces et suivre vos demandes de garde ou d’adoption.
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <div class="form-box login-box">
+                <h2>Connexion</h2>
+                <p class="subtitle">Entrez vos informations pour accéder à votre compte.</p>
+
+                <form action="login.php" method="POST" class="auth-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mdp">Mot de passe</label>
+                        <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Se connecter</button>
+
+                    <p class="switch-link">
+                        Vous n'avez pas de compte ? <a href="register.html">S'inscrire</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
